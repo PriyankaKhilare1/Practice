@@ -1,0 +1,269 @@
+body{
+    background-image: url(./flowers.jpg);
+    background-color: rgb(255, 255, 255, 0.8);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#whole_page{
+    background-image: url('./light.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255, 0.5);
+    background-blend-mode: overlay;  
+}
+  .h2{
+    visibility: hidden;/* hidden can hide the elements*/
+    /*Display:none both are same*/
+    /*display:inline/block/none/inline-block*/
+  }
+  .navbar{
+    position:fixed;/* static/relative/absolute/sticky*/  
+    display: inline-block;
+  } 
+  .a{
+    display: inline-block;
+    background-color: aquamarine;
+  }    
+h1{
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 5px 5px 2px blue; /* TO  Add shadow to text and it is blurr(2px)*/
+}
+
+#employTable{
+    border-collapse: collapse;
+    max-width: 100%; 
+    position: relative;
+    left:550px;   
+}
+td,th{
+    text-align: center;
+    font-size: 20px; 
+    border-bottom: 1px solid #ddd; /* for horizontal devider to td,th*/
+    padding: 10px;
+    border-color: black;
+    
+}
+.heading{
+    
+    color: white;
+    padding: 20px;
+}
+th{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: violet;}
+
+
+#containerList{
+    border : 5px dashed rgb(56, 255, 30);
+    border-radius: 7px; /* to add round borders to box*/
+    outline: 7px inset red; /* outside the border we draw outline */
+    outline-offset: 10px; /* space between border and outline*/
+    max-width: 30%;
+    margin : 10px;
+    padding: 20px;
+    margin-left:200px;
+    font-size: 25px;
+}
+ol{
+    background: pink;
+    padding: 25px;
+}
+.ul{
+    background: purple;
+    padding: 20px;
+}
+ul li{
+    background: greenyellow;
+    margin: 5px;
+    color: red;
+}
+.border-img{
+    border: 20px solid transparent;
+    padding: 10px;
+    border-image: url(./flowers.jpg) 50 round;
+
+}
+
+.para{
+    border: 2px solid green;
+    width : 300px;
+    height: 300px;
+    text-align:justify; /* equal width and left right margins are same*/
+    margin: 100px;
+    padding: 20px;
+    /*text-align-last: right;/* last line alignment*/
+    text-indent: 50px; /* space bet. 1st line */
+    letter-spacing: 0.5px;/* spaace bet. two letters*/
+    line-height: 1.4; /* perticular line height*/
+    word-spacing: 3px; /*space btn 2 words*/
+    white-space: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:italic;    
+}
+.smallTextOfPara{/* by using these two command we can change direction*/    
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-decoration-line: line-through underline overline;
+    text-decoration-color:red;
+    text-decoration-style: dashed;/* solid,dotted,dashed,wavy,double */
+    text-decoration-thickness: 1px;
+    text-transform: uppercase; /* lowercase/capitalize */   
+}
+
+.footer{
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%;
+    font-size: 20px;
+    text-align: center;
+    position:absolute;
+}
+.but{
+   padding: 50px;
+   margin: 30px; 
+}
+.container{
+    top:0;
+    position: sticky;
+    width:75%;
+    margin-left:405px;
+}
+.img{
+    max-width: 100%;
+    width: 100%;
+    height:200px;
+    opacity:0.3;   
+}
+.img:hover{
+    opacity:1;
+}
+.img-text{
+    position:absolute;
+    font-size: 30px;
+    top:10px;/* we can put top also to print text in top*/
+    left: 18px;/* right to print text on right sides also*/
+    z-index:1;
+    text-align: center;
+}
+.img-border{
+    border-radius: 2px 10px 25px;
+}
+.img-drop{
+    max-width: 100%;
+    width:100px;
+    height: 100px;
+}
+.para-border{
+    border-radius: 30px/10px;
+    background-image: url(/Work.webp);
+    background-color: rgb(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
+    width: 300px;
+    height: 150px;
+    font-size: 3rem;
+    color: black;
+    opacity: 0.3;
+    text-align: center;
+   
+    padding: 20px;
+    margin-left: 50px;
+}
+.para-borderUnit{
+    width: 200px;
+    height: 150px;
+    border-radius: 5px 90px;
+    background-color: pink;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.Fdiv{
+    position: absolute;
+    bottom: 100px;
+
+    width:300px;
+    height:100px;
+    border: 2px solid tomato;
+    background-color: gray ;
+    z-index: 2;/* if z-index has more value is overlap lover value*/
+}
+.Sdiv{
+    position: absolute;
+    bottom: 125px;
+    
+    width:400px;
+    height:100px;
+    border: 2px dotted blue;
+    background-color: yellow ;
+    z-index: 3;
+}.Tdiv{
+    position: absolute;
+    bottom: 130px;
+   
+    width:500px;
+    height:100px;
+    border: 2px dotted green;
+    background-color: red ;
+    z-index: 5;
+}
+.flex-cotainer{/* difference between align-item and align-content??????/*/
+    display: flex;
+    height: 200px;
+    flex-direction: row-reverse;/*row/column/row-reverse/column-reverse...which direction container show the flex items*/
+    flex-wrap: wrap; /*wrap/nowrap/wrap-reverse*/
+    /* flex-flow: column wrap-reverse;  it will combine flex direction and wrap*/
+    justify-content: center;/*center/flex-start/flex-end/space-around/spae-between..align flex items*/
+    align-items: flex-start; /*center/flex-start/flex-end/stretch/baseline...align the flex items*/
+    align-content: center;/*center/flex-start/flex-end/space-around/space-between/strech...align the flex line*/
+    width: 1500px;
+    background-color: dodgerblue;
+}.flex-cotainer > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }.row{
+    background-color: dodgerblue;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
+  }.column{
+    flex: 25%;
+    max-width: 25%;
+    /* padding: 0 4px; */
+  }
+  .column img{
+    /* margin-top: 8px; */
+    vertical-align: middle;
+    width: 100%;
+    height: 100px;
+  }
+
+  @media(max-width: 800px){
+
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }}
+  @media(max-width:600px){  
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+  }.img-object-fit{
+    height: 300px;
+    width: 400px;
+    margin-top: 300px;
+    margin-left: 450px;
+    /* how an image or video will resize to fit its contaone */
+    /* object-fit: cover/contain/fill/none/scale-down */
+    object-fit: cover;
+  }

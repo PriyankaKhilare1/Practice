@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            
+           
+            background-image: url('htmlFolder/nature.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            
+        }
+        
+        .container{
+            background-image: url('htmlFolder/paper.jpg');
+            background-color: rgb(255,255,255,0.2);
+            background-blend-mode: overlay;
+        
+            width: 500px;
+            padding: 50px;
+            margin: 50px auto 0;
+            border-top: 5px solid rgb(229, 255, 0);
+            box-shadow: 0 0 7px 5px rgb(0,0,0,0.5);
+
+        }
+        button{
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            width: 100%;
+            
+        }
+        .icon{
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+        .input-container{
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .input-field:focus{
+            border: 2px solid dodgerblue;
+        }
+        ::placeholder{
+            color:rgb(11, 17, 16); opacity:0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form  action="https://formsubmit.co/79895b84cf92c2d791bef478a32c2780"  method="post"><!---->
+        <h1>Register Form</h1>
+
+        <div class="input-container">
+            <!--     <label for="username">UserName</labe>        for label input field-->
+            <i class="fa fa-user icon"></i> <!--style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;"-->
+            <input class="input-field" type="text" id="username" name="username" placeholder="UserName" required>
+        </div><br><br>``
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="email" id="email" name="email" placeholder="xyz@gmail.com" required>
+        </div><br><br>
+        <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" id="psw" value="" name="psw" minlength="5" placeholder="Password"  required>
+        </div><br><br>
+        <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" id="repsw" value=""name="repsw" placeholder="Reapit Password" required>
+            <span id="messages" style="color:red;"></span>
+        </div><br><br>
+    <script>
+            function myFunction(){
+                var a = document.getElementById("psw").value;
+                var b = document.getElementById("repsw").value;
+                if(a!=b)
+                {
+                    document.getElementById("messages").innerHTML="Password not same ReEnterPassword";
+                    return false;
+                }
+            }
+    </script>
+        <div class="input-container">
+            <i class="fa fa-child icon"></i>
+            <select name="gender" id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</Option>
+            </select>
+        </div><br>
+        
+        
+        <hr><br>
+        <p> By creating an account you agree to our <a href="Termsprivacy.html" required>Terms & Privecy</a></p>
+
+        <button type="submit" class="btn" onclick="return myFunction()">Register</button><br><br>
+
+        <p>Already have an account? <a href="loginPage.html">Sign in</a></p>
+
+        
+    </form>
+    </div>
+
+    
+</body>
+</html>

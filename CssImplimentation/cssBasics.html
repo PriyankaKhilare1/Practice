@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cssBasics.css">
+    <style> /* if we apllay external & internal css then last one who is these will be applay for that ele. */
+        h1{
+            color:blueviolet;
+        }
+        tr:hover {
+             background-color: yellow;
+        }/* highlight table rows when mouse hover*/
+        
+        tr:nth-child(odd){ background-color: pink;} /*for zebra striped table use(nth-child) even or odd*/
+        a:link {
+            color: green;
+            text-decoration: none;
+            background-color: white;
+            padding: 14px 25px;
+        }
+        a:visited {
+            color: yellow;
+            text-decoration: none;
+            background-color: red;
+            padding: 14px 25px;
+        }
+        a:hover {  /* hover must come after link & visited. active must come after hover*/
+            color: dodgerblue;
+            text-decoration: underline;
+            background-color: white;
+          
+        }
+        a:active {
+            color: red;
+            text-decoration: underline;
+            background-color: yellow;
+            
+        }
+
+
+    </style>
+    
+</head>
+<body id="whole_page">
+    <div>
+    <div>
+    <nav class="navbar">
+        <a class="a" href=".//htmlFolder/index.html">Home</a>  
+        <a class="a"  href="contact.html">Contact</a>  
+        <a class="a"  href="services.html">Services</a>
+      
+        <a   href="dropdown.html">Dropdown</a>
+         
+    </nav>
+    </div>
+
+   <div class="h2"><h2>Visibility of element is hidden or we can say display:none. Both cases are same</h2></div>
+    <div>
+    <h1 style="color: red;"><!-- if we apllay internal,external,inline css then inline css will be applay for that ele.-->
+        Employee table
+    </h1>
+    </div><br>
+    
+    <h1 style="position:sticky; top: 0;">I Am sticky element</h1>
+
+    <div style="overflow:auto;"><!--overflow is used to add scrollbar or clip content when it is too long-->
+    <table id="employTable"><!-- overfloe : auto/visible/hidden/scroll/-->
+        <div>
+        <tr class="heading">
+            <th class="heading">Name</th>
+            <th class="heading">Sallary</th>
+            <th class="heading">Joining Date</th>
+            <th class="heading">Country</th>
+        </tr></div>
+        <div>
+        <tr>
+            <td>Jhon</td>
+            <td>80000</td>
+            <td>20-11-2019</td>
+            <td>Germany</td>
+        </tr></div>
+        <div>
+        <tr>
+            <td>Simon</td>
+            <td>95000</td>
+            <td>20-11-2018</td>
+            <td>Mexico</td>
+        </tr></div>
+        <div>
+        <tr>
+            <td>Danel</td>
+            <td>50000</td>
+            <td>20-11-2020</td>
+            <td>America</td>
+        </tr></div>
+        <div>
+        <tr>
+            <td>Roland </td>
+            <td>75000</td>
+            <td>20-11-2020</td>
+            <td>Italy</td>
+        </tr></div>
+        <div>
+        <tr>
+            <td>Helen</td>
+            <td>95000</td>
+            <td>20-11-2020</td>
+            <td>France</td>
+        </tr></div>
+        </table>
+        </div>
+        </div>
+        <div>
+        <div><h2>Employee types</h2></div>
+        <div id="containerList">
+            <ol type="1">
+                <li>Permanent:</li>
+                <ul class="ul">
+                    <li>Notice period: 3 month's</li>
+                    <li>Not negotiable</li>
+                    <li>Sallary increment in 6 months</li>
+                </ul>    
+                <li>Contract:</li> 
+                <ul class="ul">
+                    <li>Bond of 2 years</li>  
+                    <li>can not leave within 2 years</li> 
+                    <li>If he want to leave then pay some money</li>
+                </ul>  
+            </ol>
+            <b>
+                
+            <a href="cssBasics.html" target="_blank">This link </a></b>
+        </div>    
+        </div>
+        <DIV class="para">
+        <h3 stayl="text-align:center; font-weight:bold;">Temparary text</h3>
+        <p>Whether you are a small start-up or a large enterprise, 
+            we have the expertise and 
+            experience to deliver software
+            solutions that can transform your business.
+            <p class="smallTextOfPara">Contact us today to discuss your project </p>and learn more about 
+            how we can help you achieve your business objectives.
+        </p>
+        <div class="flex-cotainer">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div><br>
+        <div class="row">
+            <div class="column">
+                <img src="/Work.webp" alt="work img"style="width: 100%;">
+                <img src="./flowers.jpg" style="width: 100%;">
+                <img src="./light.jpg"style="width: 100%;">
+                <img src="/htmlFolder/natural.jpg"style="width: 100%;">
+            </div>
+            <div class="column">
+                <img src="/Work.webp" alt="work img"style="width: 100%;">
+                <img src="./flowers.jpg"style="width: 100%;">
+                <img src="./light.jpg"style="width: 100%;">
+                <img src="/htmlFolder/natural.jpg"style="width: 100%;">
+            </div>
+            <div class="column">
+                <img src="/Work.webp" alt="work img">
+                <img src="./flowers.jpg">
+                <img src="./light.jpg">
+                <img src="/htmlFolder/natural.jpg">
+            </div>
+        </div><br>
+        <div>
+        <img src="/Work.webp" alt="round-image" height="300" width="300"style=" border-radius:50%; object-fit:scroll-down;">
+         </div>
+        <div>
+         <p style="font-size: 20px;">Rate us: <span style=" font-size:200%;color: blue;">&star;</span><span style=" font-size:200%;color: blue;">&star;</span><span style=" font-size:200%;color: blue;">&star;</span><span style=" font-size:200%;color: blue;">&star;</span><span style=" font-size:200%;color: blue;">&star;</span>
+        </p>
+        </div>
+        <div ><footer class="footer"><p><a href="mailTo:priyankakhilare80@gmail.com"> Auther:Priyanka@gmailcom</a></p></footer>
+        </div> 
+    </DIV>
+    
+    
+        
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url('htmlFolder/light.jpg');
+            background-repeat: repeat;
+            background-color: rgb(255,255,255,0);
+            background-blend-mode: overlay;
+        }
+        .icon{
+            min-width: 50px;
+            padding: 10px;
+            text-align: center;
+            background-color: blueviolet;
+        }
+        .container{
+            text-align: center;
+            background-image: url('htmlFolder/natural.jpg');
+            background-color:rgb(255,255,255,0.4);
+            background-blend-mode: overlay;
+            width: 500px;
+            padding: 200px;
+            margin: 50px auto 0;
+            border-top: 5px solid rgb(255, 153, 0);
+            box-shadow: 0 0 7px 5px rgb(0,0,0,0.5);
+
+        }
+        input{
+            min-width: 50px;
+            width:50%;
+            padding: 10px;
+        }
+        button{
+            background-color: dodgerblue;
+            color:white;
+            padding: 15px 20px;
+            width: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    
+    <form action="https://formsubmit.co/79895b84cf92c2d791bef478a32c2780" method="post">
+        <div><h1 style="color:rgb(18, 9, 102)">Login Page</h1></div>
+        <div>
+        <i class="fa fa-envelope icon"></i>
+        <input type="email" name="email" id="emaill" placeholder="xyz@gmail.com" required>
+        </div><br><br>
+        <div>
+            <i class="fa fa-key icon"></i>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div><br><br>
+        <div>
+            <a href="#" style="float:center;">Forget Password?</a>
+        </div>
+        <div>
+            <button type="submit" class="btn">SignIn</button>
+        </div><br><br>
+    </div>
+    </form>
+
+    
+</body>
+</html>

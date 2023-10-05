@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssBasics.css">
+    <style>
+
+        .ul {
+            top:0;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            width: 25%;
+            background-color: lightblue;
+            height: 75%;
+            position: fixed;
+            overflow: auto;
+        }
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        li a:hover {
+            background-color: gray;
+            color: white;
+        }
+        .dropdown{
+            position: relative;
+            /* display: inline-block; */
+        }
+        .dropdown-content{
+            position:absolute;
+            z-index: 1;
+            display: none;
+            background-color: aqua;
+            min-width:150px;
+            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        }
+        .dropdown-content a{
+            display: block;
+            padding: 10px 15px;
+            color:black;
+        }
+        .dropdown-content a:hover{ background-color: pink;}
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        
+        .img{
+            background-size: cover;
+        }
+        .textImg{
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <img  class="img" src="./light.jpg" alt="position applay on image" style="top:0" >
+        <div class="img-text">Well-come</div>
+    </div>
+    
+    <!-- /* if z-index has more value is overlap lover value*/ -->
+    <br><br>
+    <div>
+        <ul class="ul" style="height: 100%;">
+            <li class="dropdown"><a class="active" href="Home.com">Home</a>
+                <div class="dropdown-content">
+                    <a href="#">Register</a>
+                    <a href="#">Services</a>
+                    <a href="#">Logout</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Home.com">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Home.com">Home</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+        </ul>
+    </div>
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <h2 class="border-img">Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+        <p class = "para-border" style="opacity: 1;">we change opacity of image and text</p>
+        <p class="para-borderUnit">we change unit and borders to round</p>
+        <p style="font-size: 2px;">Some text in pixel..</p>
+        <p>Some text in em..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+    
+        
+        <!-- <div>
+            <div class="Fdiv">Block with z-index -1</div>
+            <div class="Sdiv">Block with z-index -3</div>
+            <div class="Tdiv">Block with z-index 2</div>
+        </div><br><br><br> -->
+      <div class="dropdown " style="width: 100px; height: 100px;">
+        <img class="img-drop img-border" src="./light.jpg" alt="nature dropdown">
+        <div class="dropdown-content ">
+            <img class="img" src="./light.jpg" alt="nature dropdownn">
+            <div class="textImg">Dropdown Image large</div>
+        </div>
+      </div>
+      
+    </div>
+    <div >
+        <img class="img-object-fit" src="/CssImplimentation/flowers.jpg" <spam>Hallo</spam>>
+        <div>Img text </div>
+    </div>
+    <!-- <div>
+        <img src="/Work.webp" alt="circle image" style="height: 300; width: 300; border-radius: 50%;">
+    </div> -->
+   
+</body>    
